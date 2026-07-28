@@ -31,7 +31,7 @@ registerForm.addEventListener("submit", async (e) => {
     
         alert("Registration successful!");
     
-        window.location.href = "./login.html";
+        window.location.href = "./home.html";
     
     } catch (error) {
         console.log(error);
