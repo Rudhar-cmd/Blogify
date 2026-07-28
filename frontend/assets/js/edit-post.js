@@ -1,6 +1,5 @@
 const params = new URLSearchParams(window.location.search);
 const postId = params.get("id");
-
 const title = document.getElementById("title");
 const content = document.getElementById("content");
 const image = document.getElementById("image");
@@ -12,7 +11,7 @@ async function loadCategories() {
     try {
 
         const response = await axios.get(
-            "http://127.0.0.1:3001/category/all-category"
+            "https://blogify-7ibm.onrender.com/category/all-category"
         );
 
         category.innerHTML = `<option value="">Select Category</option>`;
@@ -40,7 +39,7 @@ async function loadPost() {
     try {
 
         const response = await axios.get(
-            `http://127.0.0.1:3001/post/${postId}`
+            `https://blogify-7ibm.onrender.com/post/${postId}`
         );
 
         const post = response.data.post;
@@ -85,7 +84,7 @@ form.addEventListener("submit", async (e) => {
         }
 
         const response = await axios.patch(
-            `http://127.0.0.1:3001/post/update-post/${postId}`,
+            `https://blogify-7ibm.onrender.com/post/update-post/${postId}`,
             formData,
             {
                 withCredentials: true,

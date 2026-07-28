@@ -40,7 +40,7 @@ async function loadPosts() {
     try {
 
         const response = await axios.get(
-            "http://127.0.0.1:3001/post"
+            "https://blogify-7ibm.onrender.com/post"
         );
 
         const posts = response.data.posts;
@@ -253,7 +253,7 @@ document.getElementById("logoutBtn").addEventListener("click", async (e) => {
     try {
 
         const response = await axios.post(
-            "http://127.0.0.1:3001/user/logout",
+            "https://blogify-7ibm.onrender.com/user/logout",
             {},
             {
                 withCredentials: true
