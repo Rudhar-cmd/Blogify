@@ -462,4 +462,119 @@
 
     }
 
+}@media (max-width: 480px) {
+
+    .profile {
+        padding: 30px 20px;
+    }
+
+    .my-blogs {
+        padding: 40px 20px;
+    }
+
+    .profile-banner {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    .profile-header {
+        gap: 25px;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .email {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .profile-stats {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .stat h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title p {
+        font-size: 0.95rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .blog-card img {
+        height: 190px;
+    }
+
+    .blog-content {
+        padding: 18px;
+    }
+
+    .blog-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .blog-content p {
+        font-size: 14px;
+    }
+
+    .blog-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .action-btn {
+        flex: 1;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .empty-state {
+        padding: 60px 15px;
+    }
+
+    .empty-state img {
+        width: 170px;
+    }
+
+    .empty-state h2 {
+        font-size: 1.6rem;
+    }
+
+    .empty-state p {
+        font-size: 15px;
+    }
 }

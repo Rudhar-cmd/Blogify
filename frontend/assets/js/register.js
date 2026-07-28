@@ -1,5 +1,3 @@
-alert("After registration, please log in to your account.");
-
 const registerForm = document.getElementById("registerForm");
 
 registerForm.addEventListener("submit", async (e) => {

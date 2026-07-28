@@ -149,3 +149,73 @@ input[type="file"] {
         font-size: 1.7rem;
     }
 }
+@media (max-width: 480px) {
+
+    .edit-post {
+        padding: 35px 20px;
+        align-items: flex-start;
+    }
+
+    .edit-container {
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .edit-container h1 {
+        font-size: 1.7rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .edit-container p {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .input-group {
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .input-group textarea {
+        min-height: 180px;
+    }
+
+    input[type="file"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .preview-image {
+        max-height: 200px;
+        border-radius: 12px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .cancel-btn,
+    .update-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .footer {
+        margin-top: 35px;
+    }
+}

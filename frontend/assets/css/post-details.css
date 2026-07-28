@@ -522,3 +522,155 @@
     }
 
 }
+@media (max-width: 480px) {
+
+    .post-details {
+        width: 95%;
+        margin: 20px auto;
+        border-radius: 16px;
+    }
+
+    .thumbnail {
+        height: 200px;
+    }
+
+    .post-info,
+    .content,
+    .comments,
+    .related {
+        padding: 20px;
+    }
+
+    .post-info h1 {
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+
+    .post-info span {
+        font-size: .8rem;
+        padding: 5px 12px;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .meta-item {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .content p {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .comments h2,
+    .related-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .comment-form textarea {
+        min-height: 110px;
+        font-size: 14px;
+    }
+
+    .comment-form button {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .comment-card {
+        padding: 18px;
+    }
+
+    .comment-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .comment-user {
+        align-items: flex-start;
+    }
+
+    .comment-avatar {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .comment-details h4,
+    .comment-info h4 {
+        font-size: 17px;
+    }
+
+    .comment-details span,
+    .comment-info span {
+        font-size: 13px;
+    }
+
+    .comment-text {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .edit-comment-input {
+        min-height: 70px;
+        font-size: 14px;
+    }
+
+    .edit-actions {
+        flex-direction: column;
+    }
+
+    .edit-actions button {
+        width: 100%;
+    }
+
+    .menu-dropdown {
+        right: -10px;
+        width: 130px;
+    }
+
+    .related-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-card img {
+        height: 180px;
+    }
+
+    .related-body {
+        padding: 18px;
+    }
+
+    .divider {
+        margin: 25px 20px;
+    }
+
+    .footer-content {
+        padding: 40px 20px;
+        text-align: center;
+    }
+}

@@ -268,3 +268,81 @@ input[type=file] {
     }
 
 }
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .register-section {
+        flex-direction: column;
+        gap: 35px;
+        padding: 40px 20px;
+    }
+
+    .register-image {
+        width: 100%;
+    }
+
+    .register-image::before {
+        width: 240px;
+        height: 240px;
+    }
+
+    .register-image img {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    .register-container {
+        width: 100%;
+    }
+
+    .register-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .register-box h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .register-box p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .input-box {
+        margin-bottom: 18px;
+    }
+
+    .input-box label {
+        font-size: 14px;
+    }
+
+    .input-box input {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    input[type="file"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .login-link {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+}

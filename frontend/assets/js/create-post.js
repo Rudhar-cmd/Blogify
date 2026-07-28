@@ -1,4 +1,3 @@
-alert("After Creating the Post, Please Visit Your Profile to See It.");
 async function fetchCategories(){
     try {
         const response = await axios.get(
