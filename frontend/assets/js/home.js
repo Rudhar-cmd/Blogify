@@ -11,7 +11,7 @@ async function getCurrentUser() {
     try {
 
         const response = await axios.get(
-            "http://127.0.0.1:3001/user/current-user",
+            "https://blogify-7ibm.onrender.com/user/current-user",
             {
                 withCredentials: true
             }

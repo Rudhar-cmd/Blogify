@@ -2,7 +2,7 @@ alert("After Creating the Post, Please Visit Your Profile to See It.");
 async function fetchCategories(){
     try {
         const response = await axios.get(
-            "http://127.0.0.1:3001/category")
+            "https://blogify-7ibm.onrender.com/category")
 
             const categories = response.data.category;
 

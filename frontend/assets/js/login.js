@@ -6,7 +6,7 @@ login.addEventListener('submit',async(e)=>{
     const formData = new FormData();
     try{
         const response = await axios.post(
-            "http://127.0.0.1:3001/user/login",
+            "https://blogify-7ibm.onrender.com/user/login",
             {
                 email : credential,
                 username : credential,

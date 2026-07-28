@@ -350,7 +350,7 @@ document.getElementById("logoutBtn").addEventListener("click", async (e) => {
     try {
 
         const response = await axios.post(
-            "http://127.0.0.1:3001/user/logout",
+            "https://blogify-7ibm.onrender.com/user/logout",
             {},
             {
                 withCredentials: true

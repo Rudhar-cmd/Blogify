@@ -1,7 +1,7 @@
 async function getProfile() {
     try {
         const response = await axios.get(
-            "http://127.0.0.1:3001/user/profile",
+            "https://blogify-7ibm.onrender.com/user/profile",
             {
                 withCredentials: true,
             }
@@ -143,7 +143,7 @@ async function deletePost(id) {
     try {
 
         const response = await axios.delete(
-            `http://127.0.0.1:3001/post/delete-post/${id}`,
+            `https://blogify-7ibm.onrender.com/post/delete-post/${id}`,
             {
                 withCredentials: true,
             }
@@ -169,7 +169,7 @@ document.getElementById("logoutBtn").addEventListener("click", async (e) => {
     try {
 
         const response = await axios.post(
-            "http://127.0.0.1:3001/user/logout",
+            "https://blogify-7ibm.onrender.com/user/logout",
             {},
             {
                 withCredentials: true

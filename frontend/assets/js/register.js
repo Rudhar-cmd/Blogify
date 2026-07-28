@@ -24,7 +24,7 @@ registerForm.addEventListener("submit", async (e) => {
         console.log("Before request");
     
         const response = await axios.post(
-            "http://127.0.0.1:3001/user/register",
+            "https://blogify-7ibm.onrender.com/user/register",
             formData
         );
     
