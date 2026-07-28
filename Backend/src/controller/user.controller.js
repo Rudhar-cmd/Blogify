@@ -113,9 +113,10 @@ const loginUser = asyncHandler(async(req,res)=>{
         "-password -refreshToken"
     );
     const options = {
-        httpOnly : true,
-        secure : process.env.NODE_ENV === "production",
-    }
+        httpOnly: true,
+        secure: true,
+        sameSite: "none",
+    };
     return res
     .status(200)
     .cookie('accessToken',accessToken,options)
@@ -141,9 +142,10 @@ const logoutUser = asyncHandler(async(req,res)=>{
         }
     )
     const options = {
-        httpOnly : true,
-        secure: process.env.NODE_ENV === "production",
-    }
+        httpOnly: true,
+        secure: true,
+        sameSite: "none",
+    };
     res.clearCookie('accessToken',options);
     res.clearCookie('refreshToken',options);
     return res
