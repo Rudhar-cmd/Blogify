@@ -10,7 +10,7 @@ import categoryRoutes from './routes/category.routes.js';
 const app = express();
 
 app.use(cors({
-    origin: "http://127.0.0.1:5500",
+    origin: process.env.CORS_ORIGIN,
     credentials: true
 }));
 
