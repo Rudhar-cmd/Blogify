@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Blog | Blogify</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/edit-post.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-nav">
+
+            <div class="logo">
+                <h2>Blogify</h2>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="home.html">Home</a></li>
+
+                    <li><a href="profile.html">Profile</a></li>
+
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <section class="edit-post">
+
+        <div class="edit-container">
+
+            <h1>Edit Blog</h1>
+
+            <p>Update your article and save the changes.</p>
+
+            <form id="editPostForm">
+
+                <div class="input-group">
+
+                    <label>Title</label>
+
+                    <input type="text" id="title" placeholder="Enter blog title" required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Content</label>
+
+                    <textarea id="content" rows="12" placeholder="Write your blog..." required></textarea>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Current Image</label>
+
+                    <img id="previewImage" src="" alt="Blog Image" class="preview-image">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Change Image (Optional)</label>
+
+                    <input type="file" id="image" accept="image/*">
+
+                </div>
+
+                <div class="buttons">
+
+                    <button type="button" class="cancel-btn" onclick="history.back()">
+
+                        Cancel
+
+                    </button>
+
+                    <button type="submit" class="update-btn">
+
+                        Update Blog
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>Blogify</h2>
+
+            <p>Read. Write. Inspire.</p>
+
+            <small>
+
+                © 2026 Blogify. All Rights Reserved.
+
+            </small>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../assets/js/edit-post.js"></script>
+
+</body>
+
+</html>

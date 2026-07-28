@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blogify | Home</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="top-nav">
+
+            <div class="logo">
+                <h2>Blogify</h2>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="home.html">Home</a></li>
+
+                    <li><a href="create-post.html">Create</a></li>
+
+                    <li><a href="profile.html">Profile</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="user-info">
+            
+                <img id="avatar" src="../assets/images/default-avatar.png" alt="Avatar">
+            
+                <div class="user-details">
+            
+                    <span id="username"></span>
+            
+                    <a href="#" id="logoutBtn">
+                        Logout
+                    </a>
+            
+                </div>      </div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <section class="welcome">
+
+        <div>
+
+            <h1 id="welcomeText">
+
+                Welcome Back 👋
+
+            </h1>
+
+            <p>
+
+                Discover amazing stories from writers around the world.
+
+            </p>
+
+        </div>
+
+        <div class="search-area">
+
+            <input type="text" id="searchInput" placeholder="Search blogs...">
+
+            <select id="sortPosts">
+
+                <option value="latest">
+
+                    Latest
+
+                </option>
+
+                <option value="popular">
+
+                    Popular
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+
+  
+
+    <section class="categories" id="categoryContainer">
+
+        <button class="active" data-category="all">
+
+            All
+
+        </button>
+
+    </section>
+
+
+
+
+
+
+
+    
+
+    <section class="latest">
+
+        <h2>
+
+            Latest Blogs
+
+        </h2>
+
+        <div class="blog-grid" id="blogGrid">
+
+            
+
+        </div>
+
+        <button class="load-more" id="loadMoreBtn">
+
+            Load More
+
+        </button>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../assets/js/home.js"></script>
+
+</body>
+
+</html>

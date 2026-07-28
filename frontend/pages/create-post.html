@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Blog | Blogify</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/post.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <div class="top-nav">
+
+            <div class="logo">
+                <h2>Blogify</h2>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="home.html">Home</a></li>
+
+                    <li><a href="profile.html">Profile</a></li>
+
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CREATE POST ================= -->
+
+    <section class="create-post">
+
+        <div class="post-card">
+
+            <div class="page-header">
+
+                <a href="home.html" class="back-btn">
+                    ← Back to Dashboard
+                </a>
+
+                <h1>Create New Blog</h1>
+
+                <p>
+                    Share your thoughts, ideas and experiences with your readers.
+                </p>
+
+            </div>
+
+
+            <form id="createPostForm" >
+
+
+                <!-- ================= BASIC INFO ================= -->
+
+                <div class="section">
+
+                    <h3>Basic Information</h3>
+
+                    <div class="input-box">
+
+                        <label for="title">
+                            Blog Title
+                        </label>
+
+                        <input type="text" id="title" name="title" placeholder="Enter an attractive title">
+
+                    </div>
+
+
+                    <div class="double-input">
+
+                        <div class="input-box">
+
+                            <label for="category">
+                                Category
+                            </label>
+
+                            <select id="category" name="category">
+                                <option value="">Select Category</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= THUMBNAIL ================= -->
+
+                <div class="section">
+
+                    <h3>Thumbnail</h3>
+
+                    <label class="upload-box" for="thumbnail">
+
+                        <div class="upload-content">
+
+                            <div class="upload-icon">
+
+                                📷
+
+                            </div>
+
+                            <h4>
+                                Upload Thumbnail
+                            </h4>
+
+                            <p>
+                                Click here or drag & drop your image
+                            </p>
+
+                            <span>
+                                JPG, PNG, WEBP
+                            </span>
+
+                        </div>
+
+                        <input type="file" id="thumbnail" accept="image/*" hidden>
+
+                    </label>
+
+
+                </div>
+
+
+
+                <!-- ================= CONTENT ================= -->
+
+                <div class="section">
+
+                    <h3>Write Your Blog</h3>
+
+                    <div class="input-box">
+
+                        <textarea id="content" rows="15" placeholder="Start writing your story here..."></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= BUTTONS ================= -->
+
+                <div class="buttons">
+
+                    <button type="button" class="btn secondary">
+
+                        Save Draft
+
+                    </button>
+
+
+                    <button type="submit" class="btn primary" id="Create-Post">
+
+                        Publish Blog
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/create-post.js"></script>
+
+</body>
+
+</html>

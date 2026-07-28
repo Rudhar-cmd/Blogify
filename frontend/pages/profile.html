@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Blogify</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+
+    <header>
+
+        <div class="top-nav">
+
+            <div class="logo">
+                <h2>Blogify</h2>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="home.html">Home</a></li>
+
+                    <li><a href="create-post.html">Create Post</a></li>
+
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ===================== PROFILE ===================== -->
+
+    <section class="profile">
+
+        <div class="profile-banner">
+
+            <div class="profile-header">
+
+                <div class="profile-image">
+
+                    <img id="profileImage" src="../assets/images/profile.png" alt="Profile">
+
+                </div>
+
+                <div class="profile-info">
+
+                    <h1 id="username"></h1>
+
+                    <p class="email" id="email">
+                    </p>
+
+                    <button class="btn primary" id="editProfile">
+
+                        Edit Profile
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===================== STATS ===================== -->
+
+            <div class="profile-stats">
+
+                <div class="stat">
+
+                    <h2 id="blogCount">0</h2>
+
+                    <p>Blogs</p>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2 id="likeCount">0</h2>
+
+                    <p>Likes</p>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2 id="commentCount">0</h2>
+
+                    <p>Comments</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ===================== MY BLOGS ===================== -->
+
+    <section class="my-blogs">
+
+        <div class="section-title">
+
+            <h2>My Blogs</h2>
+
+            <p id="publishedArticles">
+
+                0 Published Articles
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Blog Cards will come here -->
+
+        <div class="blog-grid" id="blogContainer">
+
+        </div>
+
+
+
+        <!-- ===================== EMPTY STATE ===================== -->
+
+        <div class="empty-state" id="emptyState" style="display: none;">
+
+            <img src="../assets/images/empty.svg" alt="No Blogs">
+
+            <h2>No Blogs Yet</h2>
+
+            <p>
+
+                Start writing your first article today.
+
+            </p>
+
+            <button class="btn primary" onclick="window.location.href='create-post.html'">
+
+                Create Blog
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../assets/js/profile.js"></script>
+
+</body>
+
+</html>

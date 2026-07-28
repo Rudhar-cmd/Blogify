@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Blogify</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="register-section">
+
+        <div class="register-image">
+            <img src="../assets/images/register.png" alt="Register Illustration">
+        </div>
+
+        <div class="register-container">
+
+            <div class="register-box">
+
+                <h2>Create Account</h2>
+
+                <p>
+                    Join Blogify and start sharing your stories with the world.
+                </p>
+
+                <form id="registerForm" novalidate>
+
+                    <div class="input-box">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter username" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="avatar">Profile Picture</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                    </div>
+
+                    <button type="submit" class="btn primary">
+                        Register
+                    </button>
+
+                </form>
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="./login.html">Sign In</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/register.js"></script>
+
+</body>
+
+</html>

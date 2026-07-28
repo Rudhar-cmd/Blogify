@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blogify - Share Your Stories</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+
+    async function checkUser() {
+
+        try {
+
+            await axios.get(
+                "http://127.0.0.1:3001/user/current-user",
+                {
+                    withCredentials: true
+                }
+            );
+
+            window.location.href = "./pages/home.html";
+
+        } catch (error) {
+
+        }
+
+    }
+
+    checkUser();
+
+</script>
+
+<body>
+
+
+    <header>
+
+
+        <div class="top-nav">
+
+
+            <div class="logo">
+                <h2>Blogify</h2>
+            </div>
+
+
+            <div class="auth-links">
+
+                <a href="./pages/login.html">Sign In</a>
+                
+                <span>|</span>
+                
+                <a href="./pages/register.html">Sign Up</a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Blogs</a></li>
+
+                <li><a href="#">Categories</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+
+
+    <section class="hero">
+
+
+        <div class="hero-text">
+
+
+            <h1>
+                Share Your Stories,
+                <br>
+                Inspire The World
+            </h1>
+
+
+            <p>
+
+                Publish your ideas, discover amazing blogs,
+                and connect with writers from around the globe.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="./pages/register.html" class="btn primary">
+                    Explore Blogs
+                </a>
+                
+                <a href="./pages/register.html" class="btn secondary">
+                    Start Writing            </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hero-image">
+
+
+            <img src="./assets/images/hero.svg" alt="Blog Writer">
+
+
+        </div>
+
+
+    </section>
+
+    
+    <section class="stats">
+    
+        <div class="stat">
+            <h2>5000+</h2>
+            <p>Blogs Published</p>
+        </div>
+    
+        <div class="stat">
+            <h2>2000+</h2>
+            <p>Active Writers</p>
+        </div>
+    
+        <div class="stat">
+            <h2>20K+</h2>
+            <p>Monthly Readers</p>
+        </div>
+    
+    </section>
+
+    
+    <section class="trending">
+    
+        <div class="section-title">
+    
+            <h2>Trending Blogs</h2>
+    
+            <p>Explore the latest stories from our community.</p>
+    
+        </div>
+    
+        <div class="blog-grid">
+    
+            <article class="blog-card">
+    
+                <img src="./assets/images/blog1.jpeg" alt="">
+    
+                <div class="blog-content">
+    
+                    <span>Technology</span>
+    
+                    <h3>Building REST APIs With Node.js</h3>
+    
+                    <p>
+                        Learn how scalable backend applications are built
+                        using Express.js and MongoDB.
+                    </p>
+    
+                    <a href="#">Read More →</a>
+    
+                </div>
+    
+            </article>
+    
+            <article class="blog-card">
+    
+                <img src="./assets/images/blog2.jpeg" alt="">
+    
+                <div class="blog-content">
+    
+                    <span>Travel</span>
+    
+                    <h3>Top 10 Beautiful Places To Visit</h3>
+    
+                    <p>
+                        Explore wonderful travel destinations around
+                        the world.
+                    </p>
+    
+                    <a href="#">Read More →</a>
+    
+                </div>
+    
+            </article>
+    
+            <article class="blog-card">
+    
+                <img src="./assets/images/blog3.jpeg" alt="">
+    
+                <div class="blog-content">
+    
+                    <span>Lifestyle</span>
+    
+                    <h3>Healthy Daily Habits</h3>
+    
+                    <p>
+                        Small habits that improve your health and productivity.
+                    </p>
+    
+                    <a href="#">Read More →</a>
+    
+                </div>
+    
+            </article>
+    
+        </div>
+    
+    </section>
+    
+    
+    <section class="cta">
+    
+        <h2>Start Sharing Your Stories Today</h2>
+    
+        <p>
+            Join thousands of writers and readers from around the world.
+        </p>
+    
+        <a href="./pages/register.html" class="btn primary">
+            Get Started
+        </a>
+    
+    </section>
+    
+
+    <footer>
+    
+        <div class="footer-container">
+    
+            <div class="footer-box">
+    
+                <h2>Blogify</h2>
+    
+                <p>
+                    Share knowledge, inspire people and grow together.
+                </p>
+    
+            </div>
+    
+            <div class="footer-box">
+    
+                <h3>Quick Links</h3>
+    
+                <a href="#">Home</a>
+    
+                <a href="#">Blogs</a>
+    
+                <a href="#">Categories</a>
+    
+                <a href="#">About</a>
+    
+            </div>
+    
+            <div class="footer-box">
+    
+                <h3>Support</h3>
+    
+                <a href="#">Privacy Policy</a>
+    
+                <a href="#">Terms & Conditions</a>
+    
+                <a href="#">Contact</a>
+    
+            </div>
+    
+            <div class="footer-box">
+    
+                <h3>Follow Us</h3>
+    
+                <a href="#">GitHub</a>
+    
+                <a href="#">LinkedIn</a>
+    
+                <a href="#">Instagram</a>
+    
+            </div>
+    
+        </div>
+    
+        <hr>
+    
+        <p class="copyright">
+    
+            © 2026 Blogify. All Rights Reserved.
+    
+        </p>
+    
+    </footer>
+
+
+
+</body>
+
+</html>
