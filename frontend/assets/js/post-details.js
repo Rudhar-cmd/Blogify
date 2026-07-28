@@ -7,7 +7,7 @@ async function getCurrentUser() {
     try {
 
         const response = await axios.get(
-            "http://127.0.0.1:3001/user/current-user",
+            "https://blogify-7ibm.onrender.com/user/current-user",
             {
                 withCredentials: true
             }
@@ -26,7 +26,7 @@ async function getPost() {
     try {
 
         const response = await axios.get(
-            `http://127.0.0.1:3001/post/${postId}`
+            `https://blogify-7ibm.onrender.com/post/${postId}`
         );
 
         const post = response.data.post;
@@ -63,7 +63,7 @@ document.getElementById("shareBtn").addEventListener("click", async () => {
 document.getElementById("likeBtn").addEventListener("click", async () => {
     try {
         const response = await axios.post(
-            `http://127.0.0.1:3001/likes/toggle/${postId}`,
+            `https://blogify-7ibm.onrender.com/likes/toggle/${postId}`,
             {},
             {
                 withCredentials: true
@@ -89,7 +89,7 @@ document.getElementById("commentBtn").addEventListener("click", async () => {
     try {
 
         await axios.post(
-            `http://127.0.0.1:3001/comments/${postId}`,
+            `https://blogify-7ibm.onrender.com/comments/${postId}`,
             {
                 content
             },
@@ -114,7 +114,7 @@ async function loadComments() {
     try {
 
         const response = await axios.get(
-            `http://127.0.0.1:3001/comments/${postId}`
+            `https://blogify-7ibm.onrender.com/comments/${postId}`
         );
 
         const container = document.getElementById("commentContainer");
@@ -223,7 +223,7 @@ async function loadComments() {
                 try {
 
                     const response = await axios.delete(
-                        `http://127.0.0.1:3001/comments/${commentId}`,
+                        `https://blogify-7ibm.onrender.com/comments/${commentId}`,
                         {
                             withCredentials: true
                         }
@@ -287,7 +287,7 @@ async function loadComments() {
                     try {
         
                         const response = await axios.patch(
-                            `http://127.0.0.1:3001/comments/${this.dataset.id}`,
+                            `https://blogify-7ibm.onrender.com/comments/${this.dataset.id}`,
                             {
                                 UpdateComment
                             },
@@ -322,7 +322,7 @@ async function loadComments() {
 async function loadLikeCount() {
     try {
         const response = await axios.get(
-            `http://127.0.0.1:3001/likes/count/${postId}`
+            `https://blogify-7ibm.onrender.com/likes/count/${postId}`
         );
 
         document.getElementById("likeCount").textContent = response.data.count;
